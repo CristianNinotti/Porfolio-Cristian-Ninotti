@@ -1,0 +1,341 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f1;
+    color: #2c3e50;
+}
+
+header {
+    background-color: #547EA6;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #34495e;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+section {
+    padding: 50px 20px;
+    background-color: #ecf0f1;
+}
+
+section#sobre-mi {
+    background-color: #547EA6;
+}
+
+#contacto {
+    background-color: #547EA6;
+    color: white;
+}
+
+section#sobre-mi h2, section#skills h2, section#formacion h2, section#proyectos h2, section#contacto h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+section#sobre-mi p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+section#sobre-mi h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+section#sobre-mi ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: #34495e;
+}
+
+.sobre-mi-general {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.sobre-mi {
+    border: 1px solid #2c3e50;
+    border-radius: 15px;
+    width: calc(50% - 1em);
+    padding: 1em;
+    background-color: #B0C4DE;
+    transition: transform 0.3s;
+    color: #2C3E50;
+}
+
+.sobre-mi:hover {
+    transform: translateY(-5px);
+}
+
+.objetivo-otros {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.sobre-mi-objetivo {
+    border: 1px solid #2c3e50;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #B0C4DE;
+    transition: transform 0.3s;
+    color: #2C3E50;
+}
+
+.sobre-mi-objetivo:hover {
+    transform: translateY(-5px);
+}
+
+#skills {
+    background-color: #547EA6;
+    padding: 20px;
+}
+
+#skills div {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.skills-list, .formacion-list, .proyectos-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skills-list > div {
+    flex: 1 1 calc(30% - 20px);
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #87CEEB;
+    transition: transform 0.3s;
+    color: #2C3E50;
+    font-size: 1.1em;
+}
+
+.skills-list > div svg {
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 10px;
+}
+
+.skills-list > div:hover {
+    transform: translateY(-5px);
+}
+
+#formacion {
+    background-color: #547EA6;
+}
+
+#formacion a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#formacion a:hover {
+    color: black;
+}
+
+#formacion div {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formacion-list div {
+    flex: 1 1 30%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #ADD8E6;
+    transition: transform 0.3s;
+    color: #2C3E50;
+}
+
+.formacion-list div:hover {
+    transform: translateY(-5px);
+}
+
+#proyectos {
+    background-color: #547EA6;
+}
+
+.proyectos-list div {
+    flex: 1 1 30%;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #4682B4;
+    transition: transform 0.3s;
+    color: white;
+}
+
+.proyectos-list div:hover {
+    transform: translateY(-5px);
+}
+
+#proyectos a {
+    color: white;
+}
+
+#proyectos a:visited {
+    color: white;
+}
+
+#proyectos a:hover {
+    color: black;
+}
+
+#contacto {
+    background-color: #B0C4DE;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin-top: 10px;
+    color: black;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sobre-mi-general {
+        flex-direction: column;
+    }
+
+    .sobre-mi {
+        width: 100%;
+    }
+
+    .skills-list > div, .formacion-list div, .proyectos-list div {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+}
