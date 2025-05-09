@@ -9,7 +9,7 @@ body {
 
 header {
     background-color: #547EA6;
-    padding: 5px;
+    padding: 0.005%;
 }
 
 nav ul {
@@ -68,6 +68,15 @@ img {
 .social-links a:hover {
     color: white;
 }
+
+.social svg {
+    transition: transform 0.2s ease;
+  }
+  
+  .social:hover svg {
+    transform: scale(1.1);
+  }
+  
 
 section {
     padding: 50px 20px;
